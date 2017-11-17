@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student intranet</title>
+
+    <style>
+        label {
+            float:left;
+            width:5%;
+            text-align: right;
+            margin-right: 0.5em;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .form-field-no-caption{
+            margin-left: 5%;
+            padding-left: 0.5em;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<h1>Student intranet</h1>
+<h2>All students</h2>
+<a href="controllers/allstudents.php">All students</a>
+
+<h2>Get student by Id</h2>
+<form action="controllers/studentbyid" method="post">
+    Id<input type="number" name="id"/>
+    <input type="submit" value="Search">
+
+</form>
+
+
+</body>
+</html>

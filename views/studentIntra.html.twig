@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Students</title>
+</head>
+<body>
+
+<h1>Students</h1>
+
+{% if students is empty%}
+        No students
+{%else %}
+    <ul>
+        {% for student in students %}
+            <li>
+                {{student.Id}}
+                <b>{{student.Name}}</b>:
+                <i>{{student.Start}}</i>,
+                {{student.School}}
+            </li>
+        {%endfor %}</ul>
+{%endif%}
+
+</body>
+</html>
