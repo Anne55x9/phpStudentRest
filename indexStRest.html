@@ -67,8 +67,28 @@
 
 </form>
 
+<h2>Update student</h2>
+<form action="controllers/updatestudent.php" method="post">
+    <label for="id">Id</label>
+    <input type="number" name="id" id="id"/><br/>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"/><br/>
+    <label for="start">Start</label>
+    <input type="number" name="start" id="start"> <br/>
+    <label for="school">School</label>
+    <input type="text" name="school" id="school"/> <br/>
 
+    <span class="form-field-no-caption">
+        <input type="submit" value="Update">
+    </span>
 
+</form>
+
+<h2>Delete student by Id</h2>
+<form action="controllers/deletestudent.php" method="post">
+    Id<input type="number" name="id">
+    <input type="submit" value="Delete">
+</form>
 
 </body>
 </html>
